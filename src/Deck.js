@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Deck.css';
 import Card from './Card.js';
 import axios from 'axios';
 
@@ -67,8 +68,8 @@ class Deck extends Component {
         return(
             <div>
                 <h1>Card Dealer</h1>
-                {cards}
                 <button onClick={this.getCard}>Get Card!</button>
+                <div className="Deck-cardarea">{cards}</div>             
             </div>
         )
     }
