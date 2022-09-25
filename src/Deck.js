@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import Card from './Card.js';
 
 const API_URL = "https://www.deckofcardsapi.com/api/deck/new/shuffle";
@@ -13,7 +14,7 @@ class Deck extends Component {
     }
 
     componentDidMount() {
-        
+
     }
 
     render() {
