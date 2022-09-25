@@ -60,7 +60,7 @@ class Deck extends Component {
 
         const cards = this.state.drawn.map(
             c => (
-                <Card name={c.name} image={c.image} key={c.name}/>
+                <Card name={c.name} image={c.image} key={c.id}/>
             )
         );
 
